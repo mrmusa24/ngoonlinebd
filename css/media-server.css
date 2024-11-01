@@ -1,0 +1,70 @@
+/*============================================================================================
+	Media Area
+==============================================================================================*/
+.media-server-area {
+  padding-top: 72px;
+}
+.media-server-area.media-server-2 {
+  padding: 120px 0px;
+}
+.media-server-section-title {
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+  margin: 0;
+}
+.media-server-single {
+  margin-top: 32px;
+  background: #fafbfb;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 120px;
+  width: 100%;
+  overflow: hidden;
+}
+.media-server-logo img {
+  width: 86px;
+  height: 120px;
+  border-radius: 4px;
+  object-fit: contain;
+  max-width: 86px;
+}
+.media-server-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  line-height: 140%;
+  color: var(--secondary-color);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.media-server-button .theme-btn {
+  padding: 2px 12px;
+  height: 32px;
+  line-height: 28px !important;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 767px) {
+  .media-server-section-title {
+    padding-bottom: 12px;
+    font-size: 24px;
+  }
+  .media-server-area.media-server-2 {
+    padding: 56px 0px;
+  }
+  .media-server-area {
+    padding-top: 56px;
+  }
+  .media-server-button .theme-btn {
+    line-height: 28px !important;
+  }
+}
+
+/*============================================================================================
+	End Media Area
+==============================================================================================*/

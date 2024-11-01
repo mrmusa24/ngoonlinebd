@@ -1,0 +1,117 @@
+/*============================================================================================
+	Faq Area
+==============================================================================================*/
+
+.faq-area {
+  overflow: hidden;
+}
+
+.faq-inner {
+  margin-top: 32px;
+}
+.single-faq-widget {
+  border-radius: 8px;
+  background: var(--white-color);
+  margin-bottom: 16px;
+}
+.single-faq-widget:last-child {
+  margin: 0;
+}
+.single-faq-widget .accordion-button {
+  background: var(--title-color);
+  padding: 16px 44px 16px 20px;
+  border-radius: 4px;
+  border: none !important;
+  color: var(--title-color);
+}
+.single-faq-widget .accordion-button h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: var(--white-color-2);
+}
+.single-faq-widget .accordion-button h3 span {
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  background: var(--accent-color);
+  border-radius: 4px;
+  display: inline-block;
+  margin-right: 12px;
+  text-align: center;
+}
+.single-faq-widget .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: 1px solid transparent !important;
+  border-radius: 4px 4px 0px 0px !important;
+}
+.single-faq-widget .accordion-button:focus {
+  box-shadow: none;
+}
+.faq-inner-body {
+  padding: 16px 20px 20px;
+  border: 1px solid var(--border-color) !important;
+  border-top: 0 !important;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white-color-2);
+}
+.faq-inner-body-text {
+  margin: 0;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+}
+.single-faq-widget .accordion-button::after {
+  background-image: none;
+  transform: none;
+  right: 24px;
+  content: "\f36d";
+  font-family: "uicons-solid-straight";
+  line-height: 20px;
+  color: var(--white-color-2);
+  font-size: 28px;
+  transition: all 0.4s ease;
+  position: absolute;
+}
+.single-faq-widget .accordion-button:not(.collapsed)::after {
+  content: "\f32f";
+}
+
+/* Responsive CSS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single-faq-widget .accordion-button h3 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .faq-inner {
+    margin-top: 24px;
+  }
+  .single-faq-widget .accordion-button h3 {
+    font-size: 14px;
+    padding-left: 32px;
+  }
+  .single-faq-widget .accordion-button h3 span {
+    width: 20px;
+    height: 20px;
+    line-height: 19px;
+    margin-right: 0;
+    position: absolute;
+    left: 20px;
+    top: 16px;
+    font-size: 12px;
+  }
+  .single-faq-widget .accordion-button::after {
+    right: 20px;
+    font-size: 24px;
+  }
+}
+
+/*============================================================================================
+	End Faq Area
+==============================================================================================*/

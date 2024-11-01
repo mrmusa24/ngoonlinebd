@@ -1,0 +1,94 @@
+/*============================================================================================
+	Service Area
+==============================================================================================*/
+.service-top-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.service-top-content {
+  padding-left: 16px;
+}
+.service-top-cont-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.service-top-cont-text {
+  font-weight: 500;
+  padding-top: 32px;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.service-card {
+  background: var(--white-color);
+  box-shadow: var(--box-shadow-2);
+  padding: 48px;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 48px;
+  transition: all 0.4s ease;
+}
+.service-card:hover {
+  box-shadow: var(--box-shadow-1);
+}
+.service-card-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.service-card-title {
+  margin: 0;
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 767px) {
+  .service-top-img img {
+    height: 280px;
+  }
+  .service-top-content {
+    padding-left: 0;
+    margin-top: 32px;
+  }
+  .service-top-cont-title {
+    font-size: 24px;
+  }
+  .service-top-cont-text {
+    padding-top: 24px;
+    margin-bottom: 24px;
+  }
+  .service-card-icon img {
+    width: 64px;
+    height: 64px;
+  }
+  .service-card {
+    margin-top: 24px;
+    padding: 24px 12px;
+    height: 148px;
+  }
+  .service-card-icon img {
+    width: 48px;
+    height: 48px;
+  }
+  .service-card-title {
+    font-size: 14px;
+    -webkit-line-clamp: 12;
+  }
+}
+
+/*============================================================================================
+	End Service Area
+==============================================================================================*/

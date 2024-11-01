@@ -1,0 +1,109 @@
+/*============================================================================================
+	Hero Area
+==============================================================================================*/
+.hero-area {
+  padding-bottom: 30px;
+  background: #f7faff;
+}
+.hero-single-slider {
+  height: 640px;
+}
+.hero-content {
+  padding: 116px 0px;
+}
+.hero-content-title {
+  line-height: 130%;
+  color: var(--white-color);
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.hero-content-text {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--white-color-2);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.hero-content-button {
+  margin-top: 32px;
+}
+.hero-content-button .theme-btn {
+  background: var(--secondary-color);
+}
+.hero-content-button .theme-btn:hover {
+  background: var(--accent-color);
+}
+
+/* Hero Content Animations */
+.hero-area .owl-item.active .hero-content-title {
+  animation: fadeInRight 1s both 1.2s;
+}
+.hero-area .owl-item.active .hero-content-text {
+  animation: fadeInUp 1.2s both 1.4s;
+}
+.hero-area .owl-item.active .hero-content-button {
+  animation: fadeInUp 1.4s both 1.6s;
+}
+
+/* Slider Dot */
+.hero-area .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translate(-50%);
+  line-height: 16px;
+}
+.hero-area .owl-theme .owl-dots .owl-dot span {
+  width: 56px;
+  height: 4px;
+  margin: 0;
+  margin-right: 6px;
+  background: var(--primary-color);
+  opacity: 0.2;
+  display: block;
+  transition: all 0.4s ease;
+  border-radius: 0;
+}
+.hero-area .owl-theme .owl-dots .owl-dot.active span,
+.hero-area .owl-theme .owl-dots .owl-dot span:hover {
+  background: var(--primary-color) !important;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .hero-content-title {
+    font-size: 28px;
+  }
+
+  .hero-content-text {
+    margin-top: 12px;
+  }
+
+  .hero-content {
+    padding: 80px 0px;
+  }
+
+  .hero-single-slider {
+    height: 448px;
+  }
+
+  .hero-area .owl-theme .owl-dots .owl-dot span {
+    width: 28px;
+  }
+
+  .hero-area .owl-dots {
+    bottom: -24px;
+  }
+}
+
+/*============================================================================================
+	End Hero Area
+==============================================================================================*/

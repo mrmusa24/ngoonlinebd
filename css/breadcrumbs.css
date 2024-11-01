@@ -1,0 +1,72 @@
+/*============================================================================================
+	Breadcrumbs Area
+==============================================================================================*/
+.breadcrumbs-area {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumbs-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000249 -58.96%, #0f4392 100%);
+  opacity: 0.92;
+  z-index: -1;
+}
+.breadcrumbs-content {
+  text-align: center;
+  padding: 120px 0px;
+}
+.breadcrumbs-cont-title {
+  color: var(--white-color-2);
+  margin-bottom: 16px;
+  line-height: 120%;
+}
+.breadcrumbs-menu {
+  background: #0f4392;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 2px 8px;
+}
+.breadcrumbs-menu li {
+  display: inline-block;
+  margin-right: 4px;
+}
+.breadcrumbs-menu li a {
+  color: var(--white-color);
+  opacity: 0.5;
+  font-weight: 600;
+}
+.breadcrumbs-menu li a:hover {
+  opacity: 1;
+}
+.breadcrumbs-menu li.active a {
+  opacity: 1;
+  font-weight: 700;
+}
+.breadcrumbs-menu li i {
+  color: var(--white-color);
+  margin-left: 4px;
+  position: relative;
+  top: 2px;
+}
+
+@media only screen and (max-width: 767px) {
+  .breadcrumbs-content {
+    padding: 80px 0px;
+  }
+  .breadcrumbs-cont-title {
+    margin-bottom: 12px;
+    font-size: 28px;
+  }
+  .breadcrumbs-menu li.active a {
+    font-size: 14px;
+  }
+}
+
+/*============================================================================================
+	End Breadcrumbs Area
+==============================================================================================*/

@@ -1,0 +1,114 @@
+/*============================================================================================
+	About Area
+==============================================================================================*/
+.about-area {
+  background: #f7faff;
+}
+.pricing-inner {
+  margin-top: 62px;
+}
+.about-content-sm-title {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  position: relative;
+  padding-left: 64px;
+  margin-bottom: 20px;
+}
+.about-content-title {
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 32px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.about-content-sm-title::before {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 8px;
+  background-image: url("../images/wave-line.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 11px;
+}
+.about-content-text {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.about-content-button {
+  margin-top: 32px;
+}
+.about-content-img {
+  float: right;
+}
+.about-content-img img {
+  width: 486px;
+  height: 540px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+/* Client Slider */
+.clients-slider {
+  padding-top: 72px;
+}
+.single-client-slider {
+  background: var(--white-color);
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  height: 72px;
+}
+
+.single-client-slider img {
+  width: 100% !important;
+  height: 48px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-content-sm-title {
+    font-size: 16px;
+  }
+  .about-content-title {
+    margin-bottom: 18px;
+    -webkit-line-clamp: 3;
+    font-size: 24px;
+  }
+  .about-content-img img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+  }
+  .about-content-img {
+    float: initial;
+  }
+  .order-class {
+    order: -1;
+  }
+  .about-content {
+    margin-top: 32px;
+  }
+  .single-client-slider img {
+    height: 42px;
+  }
+
+  .single-client-slider {
+    width: 162px;
+    height: 64px;
+  }
+
+  .clients-slider {
+    padding-top: 56px;
+  }
+}
+
+/*============================================================================================
+	End About Area
+==============================================================================================*/
